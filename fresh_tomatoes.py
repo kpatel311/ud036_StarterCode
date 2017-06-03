@@ -166,6 +166,7 @@ def open_movies_page(movies):
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
 
+# Creates the movies, puts them into the movies list and opens the movies page.
 def main():
     from media import Movie
 
@@ -174,10 +175,10 @@ def main():
         "http://www.impawards.com/2001/posters/memento_xlg.jpg",
         "https://www.youtube.com/watch?v=0vS0E9bBSL0")
     movie2 = Movie("Requiem for the American Dream",
-        "https://images-na.ssl-images-amazon.com/images/M/MV5BZDE0ZjNiODgtNDE4MS00MWM1LTgyZWMtZjA1NDAzYTZhMWRjXkEyXkFqcGdeQXVyNDI1Njc3NDA@._V1_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/M/MV5BZDE0ZjNiODgtNDE4MS00MWM1LTgyZWMtZjA1NDAzYTZhMWRjXkEyXkFqcGdeQXVyNDI1Njc3NDA@._V1_.jpg", # NOQA
         "https://www.youtube.com/watch?v=7jy3UtlIfVk")
     movie3 = Movie("Magic Magic",
-        "http://culturefly.co.uk/wp-content/uploads/2014/04/magic-magic-poster.jpg",
+        "http://culturefly.co.uk/wp-content/uploads/2014/04/magic-magic-poster.jpg", # NOQA
         "https://www.youtube.com/watch?v=elU_AlgW6Lw")
     movies.append(movie1)
     movies.append(movie2)
